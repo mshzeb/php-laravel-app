@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+}
+
+.list {
+    position: sticky;
+    top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.link {
+    position: relative;
+    padding-bottom: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #2b2b2b;
+}
+
+.link::after {
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #3598d5;
+    transition: width 0.3s ease-out;
+}
+
+.link:hover.link::after {
+    width: 85%;
+    left: 8px;
+}
+
+/* ========== Custom CSS =============== */
+
+.bg-dark {
+    background-color: #fff !important; 
+    /* color: #000; */
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #3598d5;
+    font-family: sans-serif;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-brand, .navbar-dark .navbar-brand {
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+/*
+.navbar-dark .navbar-nav .nav-link, :not(.navbar-brand), .navbar-dark .navbar-brand {
+    text-align: center;
+}
+*/
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: #3598d5;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #3598d5;
+}
+
+.navbar-nav {
+    font-family: sans-serif;
+}
+
+.navbar-toggler {
+    background-color: #3598d5;
+    color: #fff;
+    border-style: solid
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px;
+}
+
+button:focus {
+    outline: 2px solid #3598d5;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.divfaq, .faqtext {
+    text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+    .list {
+        height: 120px;
+    }
+
+    .link::after {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: #3598d5;
+        transition: width 0.3s ease-out;
+    }
+
+    .link:hover.link::after {
+        width: 100%;
+        left: 0;
+    }
+}

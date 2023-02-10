@@ -1,0 +1,13 @@
+.theme-nav {
+    background-color: #00746a;
+    box-shadow: 0px 5px 20px rgba(46, 229, 157, 0.4);
+    color: white;
+}
+
+.theme-btn {
+    background-color: #33e9bf;
+    box-shadow: 0px 0px 20px rgba(46, 229, 157, 0.4);
+    color: white;
+    width: 130px;
+    transform: translateY(-3);
+}
